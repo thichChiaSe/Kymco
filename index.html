@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Furnitown - Trang chủ</title>
+    <title>Kymco - Trang chủ</title>
     <link rel="icon" href="https://www.vivosmartphone.vn/themes/vivo/favicon.ico" />
     <meta name="title" content="" />
     <meta name="description" content="" />
@@ -21,230 +21,296 @@
     <link rel="stylesheet" href="dest/fonts.css" />
     <link rel="stylesheet" href="dest/stylelibs.min.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css">
+    <script src="js/flickity.pkgd.js"></script>
 </head>
 
 <body class="home">
-    <header style="display: none">
+    <header>
         <div class="container-fluid">
-            <div class="top">
-                <div class="text">
-                    <h1>furnitown</h1>
-                    <h1>share</h1>
-                    <a href="#"><img src="img/Vector Smart Object.svg" alt="" /></a>
+            <div class="logo">
+                <a href="#"><img src="/imgs/img/home/logo.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a href="#">sản phẩm</a></li>
+                <li class="menu__item"><a href="#">công nghệ</a></li>
+                <li class="menu__item"><a href="#">dịch vụ</a></li>
+                <li class="menu__item"><a href="#">tin tức</a></li>
+            </ul>
+            <div class="more">
+                <i><img src="/imgs/img/home/search.png" alt=""></i>
+                <div class="more__item">
+                    <a href="#">Đại lý</a>
                 </div>
+                <div class="more__item">
+                    <a href="#">Đăng ký khách hàng</a>
+                </div>
+            </div>
+            <div class="hamberger ">
+                <span></span>
             </div>
         </div>
     </header>
-    <main class="homepage">
+    <div class="nav ">
+        <div class="logo">
+            <img src="/imgs/img/home/logo.png" alt="">
+        </div>
+        <ul class="menumobile">
+            <li class="menumobile__item">
+                <a href="#">Sản phẩm</a>
+            </li>
+            <li class="menumobile__item">
+                <a href="#">Công nghệ</a>
+            </li>
+            <li class="menumobile__item">
+                <a href="#">Dịch vụ</a>
+            </li>
+            <li class="menumobile__item">
+                <a href="#">Tin tức</a>
+            </li>
+        </ul>
+        <div class="moremobile">
+            <div class="moremobile__item">
+                <a href="#">Đại Lý</a>
+            </div>
+            <div class="moremobile__item">
+                <a href="#">Đăng ký khách hàng</a>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" class="inputtext">
+            <i><img src="/imgs/img/home/search.png" alt=""></i>
+        </div>
+    </div>
+    <main class="main-wrapper ">
         <section class="slider">
             <div class="slider__list">
-                <div class="slider__item">
-                    <img src="img/homepage.jpg" alt="" />
+                <div class="slider__list-item">
+                    <img src="imgs/img/home/slider.png" alt="">
                 </div>
-                <!-- <div class="slider__item"></div>
-          <div class="slider__item"></div>
-          <div class="slider__item"></div> -->
+                <div class="slider__list-item">
+                    <img src="imgs/img/home/slider.png" alt="">
+                </div>
+                <div class="slider__list-item">
+                    <img src="imgs/img/home/slider.png" alt="">
+                </div>
             </div>
-            <!-- <img src="img/homepage.jpg" class="slider__item-img alt=" /> -->
             <div class="slider__bottom">
-                <div class="slider__bottom-mouse">
-                    <div class="mouse">
-                        <img src="img/mouse.png" alt="" />
-                        <h1>SẢN PHẨM FUNITOWN</h1>
+                <div class="container-fluid">
+                    <div class="font">
+                        <span>Phong cách thể thao <br> Chiến binh mạnh mẽ</span>
                     </div>
-                    <div class="line">
-                        <img src="img/line-mouse.png" alt="" />
-                    </div>
-                </div>
-                <div class="slider__bottom-control">
-                    <div class="btnctr prev">
-                        <i><img src="img/arrow-right.png" alt="" /></i>
-                    </div>
-                    <div class="btnctr next">
-                        <i><img src="img/arrow-right.png" alt="" /></i>
-                    </div>
-                </div>
-            </div>
-            <!-- <div id="menuhide">
-          <div class="close">
-            <img src="img/logo-left.png" alt="" />
-          </div>
-        </div> -->
-            <div class="btn">
-                <div class="logo-hide">
-                    <img src="img/logoHover.png" alt="" />
-                </div>
-                <div class="logo-unhide">
-                    <img src="img/logo-left.png" alt="" />
-                </div>
-                <h1>MENU</h1>
-                <div class="line"></div>
-            </div>
-            <div class="top">
-                <h1 class="text">furnitown</h1>
-                <h1 class="text">share</h1>
-                <img src="img/Vector Smart Object.svg" alt="" />
-            </div>
-            <div class="titlemain">
-                <h1>furnitown</h1>
-                <p>Nơi tìm thấy mảnh ghép nội thất còn thiếu cho ngôi nhà của bạn</p>
-            </div>
-            <div class="aboutus">
-                <a href="#">Về chúng tôi</a>
-            </div>
-            <div class="left-menu">
-                <div class="top">
-                    <div class="text-social">Funitown</div>
-                    <div class="follow-us">
-                        <div class="text-social">Follow us</div>
-                        <img src="img/email.svg" alt="" />
-                        <img src="img/facebook.svg" alt="" />
-                    </div>
-                </div>
-                <div class="bot">
-                    <div class="left">
-                        <img src="img/logo-left.png" alt="" />
-                        <div class="btn-cancel">X</div>
-                    </div>
-                    <div class="right">
-                        <ul>
-                            <li class="new-item">
-                                <a href="#"> Funitown </a>
-                            </li>
-                            <li class="new-item">
-                                <a href="#"> sản phẩm </a>
-                            </li>
-                            <li class="new-item">
-                                <a href="#"> dịch vụ </a>
-                            </li>
-                            <li class="new-item">
-                                <a href="http://localhost:3000/project.html"> dự án </a>
-                            </li>
-                            <li class="new-item">
-                                <a href="#"> liên hệ </a>
-                            </li>
-                            <li class="new-item">
-                                <a href="#" class="FAQ">FAQS</a>
-                                <a href="#">Tin tức</a>
-                            </li>
-                        </ul>
+                    <div class="bot">
+                        <div class="left">
+                            <span>Kéo xuống</span>
+                            <i class="icon"><img src="imgs/img/home/arrow-red-dot.png" alt=""></i>
+                        </div>
+                        <div class="right">
+                            <span class="number-page">
+                                01
+                            </span>
+                            <span class="slash"> /</span>
+                            <span>03</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="list-menu">
-            <ul class="menu">
-                <li><a href="#">Funitown</a></li>
-                <li><a href="#">Sản phẩm</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <img src="img/logomenu.png" alt="" />
-                <li><a href="#">Dự án</a></li>
-                <li><a href="#">Tin tức</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </section>
-        <section class="products">
-            <div class="products__container">
-                <div class="products__total">
-                    <div class="products__item item-top left">
-                        <p>
-                            “ Hãy đến & khám phá
-                            <i style="font-weight: bold">Funitown</i>, để có cơ hội thoả sức lựa chọn về <br />màu sắc và kiểu dáng trong thế giới nội thất; cùng sự an tâm trong việc<br /> tư vấn chu đáo, tận tình của đội ngũ nhân viên. "
+        <section class="mission ">
+            <div class="mission__slide">
+                <div class="mission__slide-content">
+                    <div class="txt">
+                        <h2>SỨ MỆNH KYMCO</h2>
+                        <p class="txts">Trong suốt hơn năm thập kỷ qua, KYMCO không quên sứ mệnh tạo ra các phương tiện cá nhân tiện lợi và hữu ích trong cuộc sống, từ đó giành được trái tim của người tiêu dùng trên toàn thế giới, trong đó có Việt Nam.</p>
+                    </div>
+                    <div class="txt">
+                        <h2>CÔNG NGHỆ NOODOE</h2>
+                        <p class="txts">Noodoe đặt bạn vào trung tâm của mọi thứ và làm cho mọi khoảnh khắc - từ khi bạn tiếp cận KYMCO. Thông qua từng hành trình, từng nơi bạn đi qua, thậm chí là dừng ở chốt đèn đỏ cũng trở thành một trải nghiệm tuyệt vời và thú vị
+                            hơn.
                         </p>
-                        <div class="product">
-                            <h1 class="text">Phòng làm việc</h1>
-                            <div class="image">
-                                <img src="img/chairpage2.jpg" alt="" />
-                                <div class="overlay">
-                                    <img src="img/logo-hover-funitown.svg" alt="" />
-                                    <div class="text-hover">
-                                        "Không gian sáng tạo cho sự thành đạt."
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">MORE</a>
-                                        <img src="img/right-arrow.svg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item item-top right">
-                        <div class="product">
-                            <h1 class="text">Phòng khách</h1>
-                            <div class="img-right">
-                                <img src="img/chairphongkhach.jpg" alt="" />
-                                <div class="overlay">
-                                    <img src="img/logo-hover-funitown.svg" alt="" />
-                                    <div class="text-hover">
-                                        "Không gian sáng tạo cho sự thành đạt."
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">MORE</a>
-                                        <img src="img/right-arrow.svg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="products__item item-mid">
-                    <h1 class="text">Nhà bếp</h1>
-                    <div class="image">
-                        <img src="img/kitchen.jpg" alt="" />
-                        <div class="overlay">
-                            <img src="img/logo-hover-funitown.svg" alt="" />
-                            <div class="text-hover">
-                                "Không gian sáng tạo cho sự thành đạt."
-                            </div>
-                            <div class="more">
-                                <a href="#">MORE</a>
-                                <img src="img/right-arrow.svg" alt="" />
-                            </div>
+                <div class="mission__slide-right">
+                    <i class="btn">
+                        <div class="prev">
+                            <img src="imgs/img/home/2931159_arrow_forward_right_move_navigation_icon.svg" alt="">
                         </div>
-                    </div>
-                </div>
-                <div class="products__item item-bottom">
-                    <div class="bottom-1">
-                        <h1 class="text">Phòng ngủ</h1>
-                        <div class="image"></div>
-                        <img src="img/phongngu.jpg" alt="" />
-                    </div>
-                    <div class="bottom-2">
-                        <h1 class="text">Nhà tắm</h1>
-                        <img src="img/nhatam.jpg" alt="" />
+                        <div class="next">
+                            <img src="imgs/img/home/2931159_arrow_forward_right_move_navigation_icon.svg" alt="">
+                        </div>
+                    </i>
+                    <div class="allimg">
+                        <div class="img1">
+                            <img src="imgs/img/home/slider_product.png" alt="">
+                        </div>
+                        <div class="img1">
+                            <img src="imgs/img/home/cong-nghe.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="overlay"></div>
+        <section class="product pd">
+            <div class="container">
+                <div class="products__text">
+                    <h1>sản phẩm hot</h1>
+                    <div class="des">Khám phá dòng xe được yêu thích nhất luôn nằm trong top bán chạy</div>
+                </div>
+                <div class="col3__items">
+                    <div class="col3__items-bike">
+                        <div class="numberlike">
+                            <div class="numberlike__1">
+                                <div class="title">like</div>
+                                <div class="nb">50</div>
+                            </div>
+                            <a href="#" class="click">xem chi tiet</a>
+                        </div>
+                        <img src="imgs/img/home/tay_ga_product.png" alt="">
+                    </div>
+                    <div class="col3__items-bike main">
+                        <div class="numberlike">
+                            <div class="numberlike__1">
+                                <div class="title">K-PIPE</div>
+                                <div class="nb">125</div>
+                            </div>
+                            <a href="#" class="click">xem chi tiet</a>
+                        </div>
+                        <img src="imgs/img/home/xe_so_product.png" alt="">
+                    </div>
+                    <div class="col3__items-bike">
+                        <div class="numberlike">
+                            <div class="numberlike__1">
+                                <div class="title">candy</div>
+                                <div class="nb">50</div>
+                            </div>
+                            <a href="#" class="click">xem chi tiet</a>
+                        </div>
+                        <img src="imgs/img/home/tay_ga2_product.png" alt="">
+                    </div>
+                </div>
+                <div class="text-red">
+                    <a class="more" href="#">XEM THÊM SẢN PHẨM KHÁC</a>
+                </div>
+            </div>
+        </section>
+        <section class="personality">
+
+            <!-- <img src="imgs/img/home/personality hidden.png" alt=""> -->
+            <div class="container">
+                <div class="personalitys__text">
+                    <div class="title">chọn xe <br>theo cá tính</div>
+                    <div class="txt">Xe bên bạn mang đậm chất riêng</div>
+                </div>
+                <div class="text-red m">
+                    <a class="more" href="#">Chọn xe dành riêng cho bạn!</a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="newss__text">
+                    <div class="title">tin tức</div>
+                    <div class="txt">Tổng hợp tin tức mới nhất từ KYMCO Việt Nam & quốc tế</div>
+                </div>
+                <div class="newss__list">
+                    <div class="newss__list-item">
+                        <div class="col3">
+                            <img class="imgg" src="imgs/img/home/new1.png" alt="">
+                            <div class="wrap">
+                                <div class="text">
+                                    <span class="exp">experience the range to believe it</span>
+                                    <span>discover your dream bike</span>
+                                </div>
+                                <div class="detail">
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newss__list-item">
+                        <div class="col3">
+                            <div class="hinh">
+                                <img class="imgg" src="imgs/img/home/news2.png" alt="">
+                            </div>
+                            <div class="wrap">
+                                <div class="text">
+                                    <span class="exp">experience the range to believe it</span>
+                                    <span>discover your dream bike</span>
+                                </div>
+                                <div class="detail">
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newss__list-item">
+                        <div class="col3">
+                            <img src="imgs/img/home/new3.png" alt="">
+                            <div class="wrap">
+                                <div class="text">
+                                    <span class="exp">experience the range to believe it</span>
+                                    <span>discover your dream bike</span>
+                                </div>
+                                <div class="detail">
+                                    <a href="#">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-red">
+                    <a class="more" href="#">xem thêm tin tức khác</a>
+                </div>
+        </section>
+        <section class="network">
+            <div class="container">
+                <div class="networks__text">
+                    <h1>kymco network</h1>
+                    <div class="txt">Mạng lưới KYMCO trên toàn thế giới</div>
+                    <div class="text-red">
+                        <a class="more" href="#">tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <div class="networks__bg">
+                    <img src="imgs/img/home/banner-network.jpg" alt="">
+                </div>
+                <div class="networks__global">
+                    <img src="imgs/img/home/global-banner-network.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
-            <div class="footer__slogan">
-                <p>
-                    “ Hãy đến & khám phá
-                    <i style="color: #bea67c" class="text-funitown">Funitown</i>, để có cơ hội thoả sức lựa chọn về màu sắc và kiểu dáng trong thế giới nội thất; cùng sự an tâm trong việc tư vấn chu đáo, tận tình của đội ngũ nhân viên. ”
-                </p>
-                <img src="img/pen.png" alt="" />
+            <div class="footer__top ">
+                <h1>kymco vietnam</h1>
+                <div class="footer__top-social">
+                    <a href="#"><img src="img/facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/email.svg" alt=""></a>
+                </div>
             </div>
-            <div class="footer__contact">
-                <div class="logo">
-                    <img src="img/logo.png" alt="" />
+            <div class="footer__link ">
+                <div class="footer__link-iten">
+                    <a href="#">VỀ KYMCO</a>
                 </div>
-                <ul>
-                    <li>Thời gian mở cửa: 8h - 18h - Thứ 2 đến Chủ nhật</li>
-                    <li>
-                        Số 7/22A, Ấp 6, xã Đông Thạnh, huyện Hóc Môn, thành phố Hồ Chí Minh
-                    </li>
-                    <li>Hotline: 0937.168.938</li>
-                    <li>Email: noithatfunitown@gmail.com</li>
-                </ul>
-                <div class="backtotop">
-                    <p>back to top</p>
+                <div class="footer__link-item">
+                    <a href="#">TUYỂN DỤNG</a>
                 </div>
+                <div class="footer__link-item">
+                    <a href="#">LIÊN HỆ</a>
+                </div>
+                <div class="footer__link-item">
+                    <a href="#">KYMCO NETWORK</a>
+                </div>
+            </div>
+            <div class="footer__bottom ">
+                <img src="imgs/img/home/logo.png" alt="">
+                <div class="footer__bottom-txt"> KWANG YANG VIỆT NAM © 2018 All Rights Reserved</div>
             </div>
         </div>
     </footer>
+    <div class="back-to-top">
+        <i><img src="imgs/img/home/352469_arrow_up_icon.svg" alt=""></i>
+    </div>
     <script type="text/javascript" src="js/libs/_jquery.js"></script>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

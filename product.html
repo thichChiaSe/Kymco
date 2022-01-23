@@ -1,81 +1,320 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Grunt Project</title>
-    <link
-      rel="icon"
-      href="https://www.vivosmartphone.vn/themes/vivo/favicon.ico"
-    />
-    <meta name="title" content="" />
-    <meta name="description" content="" />
-    <meta property="og:locale" content="vi" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Trang chủ" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content="" />
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
     <link rel="stylesheet" href="dest/style.min.css" />
     <link rel="stylesheet" href="dest/fonts.css" />
     <link rel="stylesheet" href="dest/stylelibs.min.css" />
-  </head>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+</head>
 
-  <body>
-    <header style="display: none">
-      <div class="container-fluid">
-        <div class="top">
-          <div class="text">
-            <h1>furnitown</h1>
-            <h1>share</h1>
-            <a href="#"><img src="img/arrow-right.png" alt="" /></a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="product">
-                <div class="img">
-                    <img src="img/product/chairbrow.jpg" alt="">
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="#"><img src="/imgs/img/home/logo.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li class="menu__item"><a href="#">sản phẩm</a></li>
+                <li class="menu__item"><a href="#">công nghệ</a></li>
+                <li class="menu__item"><a href="#">dịch vụ</a></li>
+                <li class="menu__item"><a href="#">tin tức</a></li>
+            </ul>
+            <div class="more">
+                <i><img src="/imgs/img/home/search.png" alt=""></i>
+                <div class="more__item">
+                    <a href="#">Đại lý</a>
                 </div>
-                <div class="content-img">
-                    <p class="title">Ghế gỗ sồi loại 1</p>
-                    <p>Giá: 700.000 VND </p>
-                    <a class="btn">
-                        <img src="img/Vector Smart Object.svg" alt="">
-                        <span>CHI TIẾT<span>
-                        </a>
+                <div class="more__item">
+                    <a href="#">Đăng ký khách hàng</a>
                 </div>
             </div>
+            <div class="hamberger ">
+                <span></span>
+            </div>
         </div>
-    </main>
-    <!-- <footer>
-      <div class="container">
-        <div class="pen">
-          <img src="img/pen.png" alt="" />
-        </div>
+    </header>
+    <div class="nav ">
         <div class="logo">
-          <img src="img/logo.png" alt="" />
+            <img src="/imgs/img/home/logo.png" alt="">
         </div>
-        <div class="text">
-          <p>Thời gian mở cửa: 8h - 18h - Thứ 2 đến Chủ nhật</p>
-          <p>
-            Số 7/22A, Ấp 6, xã Đông Thạnh, huyện Hóc Môn, thành phố Hồ Chí Minh
-          </p>
-          <p>Hotline: 0937.168.938</p>
-          <p>Email: noithatfunitown@gmail.com</p>
+        <ul class="menumobile">
+            <li class="menumobile__item">
+                <a href="#">Sản phẩm</a>
+            </li>
+            <li class="menumobile__item">
+                <a href="#">Công nghệ</a>
+            </li>
+            <li class="menumobile__item">
+                <a href="#">Dịch vụ</a>
+            </li>
+            <li class="menumobile__item">
+                <a href="#">Tin tức</a>
+            </li>
+        </ul>
+        <div class="moremobile">
+            <div class="moremobile__item">
+                <a href="#">Đại Lý</a>
+            </div>
+            <div class="moremobile__item">
+                <a href="#">Đăng ký khách hàng</a>
+            </div>
         </div>
-        <div class="backtotop">
-          <p>back to top</p>
+        <div class="search">
+            <input type="text" class="inputtext">
+            <i><img src="/imgs/img/home/search.png" alt=""></i>
         </div>
-      </div>
-    </footer> -->
-    <script type="text/javascript" src="js/libs/_jquery.js"></script>
-    <script type="text/javascript" src="dest/jsmain.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+    </div>
+    <main class="main-wrapper">
+        <section class="banner">
+            <img src="/imgs/img/product/banner top.png" alt="">
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="content__text">
+                    <h1>các sản phẩm của kymco</h1>
+                    <div class="txt">Bạn đang tìm kiếm một chiếc xe nhỏ gọn, len lỏi qua những con phố đông đúc hay một người bạn đồng hành cùng rong ruổi trên những cung đường, các sản phẩm của Kymco là câu trả lời hoàn hảo cho nhu cầu của bạn.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="content__show">
+                    <div class="content__show-item">
+                        <div class="img">
+                            <img src="/imgs/img/product/product-like.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="textbox">
+                                <div class="title">THOẢI MÁI VI VU THÀNH THỊ</div>
+                                <div class="description">Các sản phẩm với thiết kế sang trọng, tiện lợi, phù hợp để di chuyển trong thành phố. Bao gồm Like 50, Candy Hi 50, People One 125
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="listmore__item">
+                                <div class="listmore__item-name">LIKE 50</div>
+                                <div class="listmore__item-img"><img src="/imgs/img/product/product-more-1.png" alt=""></div>
+                                <div class="listmore__item-price">
+                                    <span>
+                                    Giá bán lẻ đề xuất
+                                </span>
+                                    <span class="price">
+                                        13.500.000 VNĐ
+                                    </span>
+                                </div>
+                                <div class="listmore__item-btn">
+                                    <div class="btn__main">Xem chi tiết</div>
+                                    <div class="btn__main sosanh">
+                                        So sánh xe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listmore__item">
+                                <div class="listmore__item-name">Candy 50</div>
+                                <div class="listmore__item-img"><img src="/imgs/img/product/product-more-2.png" alt=""></div>
+                                <div class="listmore__item-price">
+                                    <span>
+                                        Giá bán lẻ đề xuất
+                                    </span>
+                                    <span class="price">
+                                            23.100.000 VNĐ
+                                        </span>
+                                </div>
+                                <div class="listmore__item-btn">
+                                    <div class="btn__main">Xem chi tiết</div>
+                                    <div class="btn__main sosanh">
+                                        So sánh xe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listmore__item">
+                                <div class="listmore__item-name">people one 125</div>
+                                <div class="listmore__item-img"><img src="/imgs/img/product/product-more-3.png" alt=""></div>
+                                <div class="listmore__item-price">
+                                    <span>
+                                        Giá bán lẻ đề xuất
+                                    </span>
+                                    <span class="price">
+                                            40.390.000 VNĐ
+                                        </span>
+                                </div>
+                                <div class="listmore__item-btn">
+                                    <div class="btn__main">Xem chi tiết</div>
+                                    <div class="btn__main sosanh">
+                                        So sánh xe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listmore__control">
+                                <img src="/imgs/img/home/2931159_arrow_forward_right_move_navigation_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__show-item">
+                        <div class="img">
+                            <img src="/imgs/img/product/product-pike.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="textbox">
+                                <div class="title">THOẢI MÁI VI VU THÀNH THỊ</div>
+                                <div class="description">Các sản phẩm với thiết kế sang trọng, tiện lợi, phù hợp để di chuyển trong thành phố. Bao gồm Like 50, Candy Hi 50, People One 125
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="listmore__item">
+                                <div class="listmore__item-name">k-pipe-50</div>
+                                <div class="listmore__item-img">
+                                    <img src="/imgs/img/product/product-more-4.png" alt="">
+                                </div>
+                                <div class="listmore__item-price">
+                                    <span>
+                                        Giá bán lẻ đề xuất
+                                    </span>
+                                    <span class="price">
+                                            20.500.000 VNĐ
+                                        </span>
+                                </div>
+                                <div class="listmore__item-btn">
+                                    <div class="btn__main">Xem chi tiết</div>
+                                    <div class="btn__main sosanh">
+                                        So sánh xe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listmore__item">
+                                <div class="listmore__item-name">k-pipe 125</div>
+                                <div class="listmore__item-img"></div>
+                                <div class="listmore__item-price">
+                                    <span>
+                                        Giá bán lẻ đề xuất
+                                    </span>
+                                    <span class="price">
+                                            34.490.000 VNĐ
+                                        </span>
+                                </div>
+                                <div class="listmore__item-btn">
+                                    <div class="btn__main">Xem chi tiết</div>
+                                    <div class="btn__main sosanh">
+                                        So sánh xe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listmore__control">
+                                <img src="/imgs/img/home/2931159_arrow_forward_right_move_navigation_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__show-item">
+                        <div class="img">
+                            <img src="/imgs/img/product/product-xtown.png" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="textbox">
+                                <div class="title">ĐẲNG CẤP DOANH NHÂN THÀNH ĐẠT</div>
+                                <div class="description">Dòng sản phẩm cao cấp của Kymco Bao gồm X-Town.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="listmore__item">
+                                <div class="listmore__item-name">AK-550</div>
+                                <div class="listmore__item-img">
+                                    <img src="/imgs/img/product/product-more-6.png" alt="">
+                                </div>
+                                <div class="listmore__item-price">
+                                    <span>
+                                        Giá bán lẻ đề xuất
+                                    </span>
+                                    <span class="price">
+                                            chưa công bố
+                                        </span>
+                                </div>
+                                <div class="listmore__item-btn">
+                                    <div class="btn__main">Xem chi tiết</div>
+                                    <div class="btn__main sosanh">
+                                        So sánh xe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listmore__control">
+                                <img src="/imgs/img/home/2931159_arrow_forward_right_move_navigation_icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__choose">
+                    <div class="content__choose-title">
+                        <div class="textbox">
+                            <div class="title">Chọn xe theo yêu cầu</div>
+                            <div class="description">Giúp bạn dễ dàng hơn trong việc lựa chọn chiếc xe phù hợp.</div>
+                        </div>
+                    </div>
+                    <div class="content__choose-more">
+                        <div class="type">
+                            <div class="type__box choose-box">
+                                <div class="choose-box__text">Loại xe</div>
+                            </div>
+                            <div class="type__box choose-box">
+                                <img src="" alt="">
+                                <span class="choose-box__text">Nhập khẩu</span>
+                            </div>
+                            <div class="type__box choose-box">
+                                <img src="" alt="">
+                                <span class="choose-box__text">Xe ga</span>
+                            </div>
+                            <div class="type__box choose-box">
+                                <img src="" alt="">
+                                <span class="choose-box__text">Xe số</span>
+                            </div>
+                        </div>
+                        <div class="engine">
+                            <div class="engine__box choose-box"></div>
+                            <div class="engine__box choose-box"></div>
+                            <div class="engine__box choose-box"></div>
+                            <div class="engine__box choose-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="container">
+        <div class="footer__top ">
+            <h1>kymco vietnam</h1>
+            <div class="footer__top-social">
+                <a href="#"><img src="img/facebook.svg" alt=""></a>
+                <a href="#"><img src="img/email.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer__link ">
+            <div class="footer__link-iten">
+                <a href="#">VỀ KYMCO</a>
+            </div>
+            <div class="footer__link-item">
+                <a href="#">TUYỂN DỤNG</a>
+            </div>
+            <div class="footer__link-item">
+                <a href="#">LIÊN HỆ</a>
+            </div>
+            <div class="footer__link-item">
+                <a href="#">KYMCO NETWORK</a>
+            </div>
+        </div>
+        <div class="footer__bottom ">
+            <img src="imgs/img/home/logo.png" alt="">
+            <div class="footer__bottom-txt"> KWANG YANG VIỆT NAM © 2018 All Rights Reserved</div>
+        </div>
+    </div>
+</footer>
+
 </html>

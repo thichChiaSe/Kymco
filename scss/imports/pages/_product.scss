@@ -1,0 +1,256 @@
+header {
+    background: linear-gradient( 0deg, rgba(12, 36, 97, 0) 6%, rgba(0, 0, 0, 0.7175245098) 100%);
+    transition: .8s cubic-bezier(0.75, 0.06, 0.05, 1);
+    z-index: 300;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    @include tablet {}
+    ;
+    .container-fluid {
+        height: 100%;
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        .hamberger {
+            width: 50px;
+            display: none;
+            z-index: 1000;
+            cursor: pointer;
+            position: relative;
+            @include transition(all .5s ease-in-out);
+            @include tablet {
+                padding-bottom: 10px;
+                padding-left: 120px;
+                display: flex;
+            }
+            @include mobile {
+                display: flex;
+            }
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            &.active {
+                span {
+                    opacity: 0;
+                }
+                &::before {
+                    @include transform(rotate(45deg));
+                }
+                &::after {
+                    @include transform(rotate(-45deg));
+                }
+            }
+            span,
+            &::before,
+            &::after {
+                @include line(30px, 3px, red);
+                @include transition(all .5s ease-in-out);
+                @include br(5px);
+            }
+            &::before {
+                @include transform(translateY(-10px));
+            }
+            &::after {
+                @include transform(translateY(10px));
+            }
+        }
+        .menu {
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            width: 860px;
+            text-transform: uppercase;
+            color: white;
+            li a {
+                text-decoration: none;
+                color: white;
+            }
+            @include tablet {
+                display: none;
+            }
+        }
+        .more {
+            @include tablet {
+                display: none;
+            }
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            text-transform: uppercase;
+            color: white;
+            i {
+                >img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .more__item {
+                a {
+                    padding: 2px 15px 2px 15px;
+                    background: red;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.nav {
+    @include tablet {}
+    background: #f4352c;
+    position: fixed;
+    z-index: 301;
+    width: 100vw;
+    height: 100vh;
+    top: 100px;
+    transform: translateX(100%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+    &.active {
+        transform: translateX(0%);
+        .logo {
+            @include tablet {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                padding: 50px;
+            }
+            &::before {
+                content: "";
+                background: white;
+                width: 2px;
+                height: 500px;
+                position: absolute;
+                top: -145px;
+                left: 150px;
+                transform: rotate(90deg);
+            }
+        }
+        .menumobile {
+            line-height: 55px;
+            width: 100%;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            &__item {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font: 22px;
+                }
+            }
+        }
+        .moremobile {
+            line-height: 55px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            &__item {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font: 22px;
+                }
+            }
+        }
+        .search {
+            position: relative;
+            margin-top: 10px;
+            width: 100%;
+            input {
+                margin-left: 26px;
+                width: 81%;
+                height: 40px;
+                padding-left: 40px;
+                padding-right: 20px;
+                border-radius: 50px;
+                border: none;
+            }
+            i {
+                img {
+                    position: absolute;
+                    top: 8px;
+                    right: 10px;
+                }
+            }
+            &::before {
+                content: "";
+                background: white;
+                width: 2px;
+                height: 500px;
+                position: absolute;
+                top: -265px;
+                left: 150px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .logo {
+        @include tablet {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 50px;
+        }
+    }
+    .menumobile {
+        &__item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+    }
+}
+
+.banner {
+    img {
+        height: 430px;
+        width: 100vw;
+    }
+}
+
+.products {
+    --pad: 50px;
+    .container {
+        .content__text {
+            margin-left: 187px;
+            max-width: 734px;
+            padding-top: var(--pad);
+            h1 {
+                text-align: center;
+                font-size: 60px;
+                font-family: dinea;
+                line-height: 65px;
+                color: #000;
+                text-transform: uppercase;
+            }
+        }
+        .txt {
+            text-align: center;
+            letter-spacing: 0.4px;
+            margin-top: 24px;
+            font-size: 22px;
+            font-family: avo;
+            line-height: 25px;
+            color: #000;
+            text-transform: initial;
+        }
+    }
+}
